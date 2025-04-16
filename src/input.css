@@ -1,95 +1,94 @@
 
 
 @font-face {
-    font-family: 'Product Sans';
-    src: url('/fonts/ProductSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
+  font-family: 'Product Sans';
+  src: url('/fonts/ProductSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('/fonts/ProductSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Product Sans';
+  src: url('/fonts/ProductSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: light;
+}
+
+.prybutton{
+  width: fit-content;
+  padding: 12px 16px;
+  border-radius: 100rem;
+  background: #5C8097;
+}
+
+.secbutton{
+  padding: 12px 16px;
+  border-radius: 100rem;
+  background: #CEA154;
+}
+.pry-outline-button{
+  padding: 12px 16px;
+  border-radius: 100rem;
+  background: transparent;
+  border: 2px solid #5C8097;
+}
+.bgimage1{
+  background-image: url(/assets/asset\ 4.jpeg)
+}
+.bgimage2{
+  background-image: url(/assets/hero/hero6.jpeg);
+  z-index: 0;
+}
+
+.bgimage3{
+  background-image: url(/assets/asset\ 3.jpeg);
+  height: 40rem;
+}
+
+.ight-feature-side{
+  width: 50%;
+}
+.card{
+  /* width: 17rem;
+  min-width: 17rem;
+  height: auto; */
+
+}
+
   
-  @font-face {
-    font-family: 'Product Sans';
-    src: url('/fonts/ProductSans-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: 'Product Sans';
-    src: url('/fonts/ProductSans-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: light;
+.left-side-feature{
+      /* width: 50%; */
+      /* padding-bottom: 36rem; */
+      /* height: 31.5rem */
   }
 
-  .prybutton{
-    width: fit-content;
-    padding: 12px 16px;
-    border-radius: 100rem;
-    background: #5C8097;
-  }
 
-  .secbutton{
-    padding: 12px 16px;
-    border-radius: 100rem;
-    background: #CEA154;
-  }
-  .pry-outline-button{
-    padding: 12px 16px;
-    border-radius: 100rem;
-    background: transparent;
-    border: 2px solid #5C8097;
-  }
-  .bgimage1{
-    background-image: url(/assets/asset\ 4.jpeg)
-  }
-  .bgimage2{
-    background-image: url(/assets/hero/hero6.jpeg);
-    z-index: 0;
-  }
-
-  .bgimage3{
-    background-image: url(/assets/asset\ 3.jpeg);
-    height: 40rem;
-  }
-
-  .ight-feature-side{
-    width: 50%;
-  }
-  .card{
-    /* width: 17rem;
-    min-width: 17rem;
-    height: auto; */
-
-  }
-  
+    .review-card::-webkit-scrollbar {
+      display: none; /* For WebKit-based browsers */
     
-  .left-side-feature{
-        /* width: 50%; */
-        /* padding-bottom: 36rem; */
-        /* height: 31.5rem */
-    }
-
- 
-      .review-card::-webkit-scrollbar {
-        display: none; /* For WebKit-based browsers */
-      
 
 
-    }
+  }
 
-    .faded{
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 8.01%, rgba(183, 199, 209, 0.44) 36.17%, rgba(28, 54, 71, 0.80) 67.27%);
-      height: 18rem;
-      width: 40rem;
+  .faded{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 8.01%, rgba(183, 199, 209, 0.44) 36.17%, rgba(28, 54, 71, 0.80) 67.27%);
+    height: 18rem;
+    width: 40rem;
 
-    }
+  }
 
 
-    /* .right-second-section {
-      background-image: url(/assets/asset\ 8.jpeg);
-      height: 30rem;
-    } */
+  /* .right-second-section {
+    background-image: url(/assets/asset\ 8.jpeg);
+    height: 30rem;
+  } */
 
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
