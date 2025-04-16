@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homecare</title>
+  <link href="./dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/input.css">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+</head>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+<body class="bg-background text-text  font-product">
+
+
+
+  <!-- Header -->
+  <div  class="header  sticky top-0 bg-white z-50  py-6 px-5 md:px-[2rem]  flex items-center w-full justify-between">
+    <div class="logo w-[6rem] md:w-40 ">
+      <img class="w-64" src="/assets/asset 0.png" alt="">
+    </div>
+    <div class="nav-bar hidden lg:flex rounded-full bg-grey10 justify-between gap-8 py-4 px-6">
+      <a  class=" cursor-pointer text-p-md" href="">About us</a>
+      <a  class=" cursor-pointer text-p-md" href="">Services</a>
+      <a  class=" cursor-pointer text-p-md" href="">Contact us</a>
+      <a  class=" cursor-pointer text-p-md" href="">Resources</a>
+    </div>
+
+    <div class="call-to-actions  w-fit  flex gap-[1rem] lg:gap-8 justify-between items-center">
+      <div class="phone-number w-fit h-auto hidden md:flex flex-row justify-between items-center gap-4">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <mask id="mask0_5_1652" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+            <rect width="24" height="24" fill="#D9D9D9"/>
+          </mask>
+          <g mask="url(#mask0_5_1652)">
+            <path d="M19.95 21C17.8667 21 15.8083 20.5458 13.775 19.6375C11.7417 18.7292 9.89167 17.4417 8.225 15.775C6.55833 14.1083 5.27083 12.2583 4.3625 10.225C3.45417 8.19167 3 6.13333 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07917 8.725 3.2375C8.90833 3.39583 9.01667 3.58333 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.70417 12.1125 8.1625 12.6875C8.62083 13.2625 9.125 13.8167 9.675 14.35C10.1917 14.8667 10.7333 15.3458 11.3 15.7875C11.8667 16.2292 12.4667 16.6333 13.1 17L15.45 14.65C15.6 14.5 15.7958 14.3875 16.0375 14.3125C16.2792 14.2375 16.5167 14.2167 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1375 20.775 15.3125C20.925 15.4875 21 15.6833 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21Z" fill="#CEA154"/>
+          </g>
+        </svg>
+        <p class=" text-p-md text-secondary100">(856) 866-6780</p>
+      </div>
+      <button onclick="window.location.href='https://11952.axiscare.com/?caregivers-applications.php'" class="prybutton cursor-pointer text-white">
+        Apply today
+      </button>
+      <button id="menu-button" class="lg:hidden">
+       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+  <mask id="mask0_213_77" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="25">
+    <rect y="0.5" width="24" height="24" fill="#D9D9D9"/>
+  </mask>
+  <g mask="url(#mask0_213_77)">
+    <path d="M3 18.5V16.5H21V18.5H3ZM3 13.5V11.5H21V13.5H3ZM3 8.5V6.5H21V8.5H3Z" fill="#1C1B1F"/>
+  </g>
+</svg>
+      </button>
+    </div>
+  </div>
+
+
+  <!-- nav bar mobile  -->
+  <div id="menu" class="menu hidden sticky w-full h-auto bg-white flex-col justify-between items-start gap-6 py-8 px-6">
+    <div class="footer-nav-bar  flex flex-col justify-between gap-4 md:gap-8 ">
+      <a  class=" cursor-pointer text-p-base" href="">About us</a>
+      <a  class=" cursor-pointer text-p-base" href="">Services</a>
+      <a  class=" cursor-pointer text-p-base" href="">Contact us</a>
+      <a  class=" cursor-pointer text-p-base" href="">Resources</a>
+    </div>
+  </div>
+ 
+
+  <!-- section 1 -->
+
+  <div  class="hero-section  flex flex-col lg:flex-row w-full justify-between items-center  md:justify-between md:items-center gap-4 px-5 py-6 md:gap-8 md:px-5 md:py-6  lg:py-8 lg:px-16">
+    <div  class="left-side  h-auto flex flex-col w-full  gap-6 lg:w-1/2">
+      <div class="hero-text-section relative rounded-3xl md:rounded-4xl py-16 px-4 md:px-8 w-full h-auto  flex flex-col gap-4 md:gap-8 items-center md:items-start bg-grey50  "> 
+        <img class="w-40 md:absolute right-12 top-8"  src="/assets/asset 0.png" alt="" > 
+       <h1  class="hero-text w:[100%] text-h3-regular text-center md:text-left md:text-h1-base  md:w-[60%] lg:w-[80%]"> <span class="text-primary100 " >Care</span> you can count on</h1>
+       <p class=" w-[100%] text-p-md md:text-p-xl text-center md:text-left md:w-4/5">Your Choice for Exceptional non-medical in-home CareLive-In & Hourly Care</p>
+      </div>
+
+      <div  class="bottom-hero  flex gap-4 ">
+        <div    class="bgimage1 hidden md:block transition-all ease-linear  duration-1000 bg-center bg-cover w-2/4 h-64 md:rounded-4xl"></div>
+
+
+        <div class=" w-full bgimage2 flex flex-col justify-end px-4 py-8  transition-all ease-linear duration-1000 bg-center bg-cover h-80 md:h-64 rounded-[1.5rem] lg:rounded-4xl relative overflow-hidden ">
+
+
+          <p class="text-white text-p-lg z-10">Providing care in Burlington, Camden, and Gloucester Counties, and surrounding areas</p>
+
+          <div class= " faded w-[50rem] absolute left-0 md:-left-2 -bottom-0 z-0 ">
+          </div>
+
+
+          
+        </div>
+      </div>
+    </div>
+
+    <div  class="bgimage3 hidden lg:block  transition-all ease-linear  duration-1000 bg-center bg-cover w-2/4 h-64 lg:rounded-4xl"></div>
+
+
+    </div>
+  </div>
+  <!-- section 2 -->
+
+  <div data-aos="fade-up" class="section2 py-5 px-6 w-full h-auto  bg-white flex flex-col lg:py-20 lg:px-16 lg:flex lg:flex-row gap-16 justify-between items-start  "> 
+    <div class="left-side-feature w-[100%] h-[28rem] md:h-[32rem] bg-grey20 relative overflow-hidden rounded-4xl lg:w-2/5 ">
+      <div class="serving-and-logo w-full py-8 px-6 md:px-8 ">
+        <div class="flex flex-col md:flex-row gap-6 md:justify-between md:items-center items-start ">
+          <img class="w-40 md:hidden" src="/assets/asset 0.png" alt="" > 
+          <h3 class="w-3/4 text-text text-p-lg">Serving Burlington and Camden Counties</h3>
+        <img class="w-40 hidden md:block"   src="/assets/asset 0.png" alt="" > 
+      </div>
+      <img class="absolute left-1 bottom-0  w-120" src="/assets/asset 7.jpeg" alt="">
+        </div>
+        
+      
+    </div>
+    <div class="right-feature-side w-100% lg:w-3/5 bg-grey10 flex flex-col justify-center items-start py-4 px-6 md:py-8 md:px-8  h:auto md:h-[32rem] rounded-2xl md:rounded-3xl lg:rounded-4xl ">
+      <div class="focus-text w-full md:w-11/12 flex flex-col gap-6">
+        <h2 class="text-p-xl md:text-h2-base  ">Our Focus Is Helping Seniors Live Well At Home</h2>
+        <p class="text-p-md md:text-p-lg text-text">Haddon Home Care, where we care for your loved one like they are our own. With more than 50 years of experience in healthcare and home care, our team will ensure that the highest quality care is provided to our clients.</p>
+        <p class=" text-p-md text-text">Our staff takes the time to make sure that all of your specific needs are well taken care of.</p>
+        <button class="prybutton pry-outline-button text-primary100  ">Read About us</button>
+
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- section 3 -->
+
+  <div data-aos="fade-up" class="section-3 flex flex-col lg:flex-row justify-between items-start gap-8 py-5 px-6 lg:px-16 lg:py-20 bg-grey20">
+    <div class="left-second-features w-full lg:w-[50%] flex justify-center items-center lg:justify-start lg:items-start flex-col gap-12">
+      <div class=" w-70%] lg:w-5/6 flex flex-col justify-center items-center lg:items-start lg:justify-center gap-6">
+        <h2 class="text-p-xl text-center lg:text-left md:text-h2-base w-full md:w-[70%] lg:w-full   ">We care for your loved one like they are our own</h2>
+        <p class="text-p-md text-text text-center lg:text-left  w-[100%]">At Haddon Home Care, we help to ensure every person is able to thrive with dignity through individual independence and high-quality, personalized care.</p>
+      </div>
+      <div class="w-full lg:w-[80%] h-auto gap-4 flex flex-col md:flex-row  justify-between   ">
+        <div class="card1 w-full lg:w-1/2 h-fit flex flex-col gap-6 justify-start items-start py-12 px-8 bg-white rounded-2xl md:rounded-3xl  ">
+          <div class="w-[3.2rem] h-[3.2rem] bg-secondary10 rounded-full flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none">
+              <mask id="mask0_199_457" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_199_457)">
+                <path d="M5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H9.2C9.43333 2.4 9.8 1.91667 10.3 1.55C10.8 1.18333 11.3667 1 12 1C12.6333 1 13.2 1.18333 13.7 1.55C14.2 1.91667 14.5667 2.4 14.8 3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V19C21 19.55 20.8042 20.0208 20.4125 20.4125C20.0208 20.8042 19.55 21 19 21H5ZM12 4.25C12.2167 4.25 12.3958 4.17917 12.5375 4.0375C12.6792 3.89583 12.75 3.71667 12.75 3.5C12.75 3.28333 12.6792 3.10417 12.5375 2.9625C12.3958 2.82083 12.2167 2.75 12 2.75C11.7833 2.75 11.6042 2.82083 11.4625 2.9625C11.3208 3.10417 11.25 3.28333 11.25 3.5C11.25 3.71667 11.3208 3.89583 11.4625 4.0375C11.6042 4.17917 11.7833 4.25 12 4.25ZM12 13C12.9667 13 13.7917 12.6583 14.475 11.975C15.1583 11.2917 15.5 10.4667 15.5 9.5C15.5 8.53333 15.1583 7.70833 14.475 7.025C13.7917 6.34167 12.9667 6 12 6C11.0333 6 10.2083 6.34167 9.525 7.025C8.84167 7.70833 8.5 8.53333 8.5 9.5C8.5 10.4667 8.84167 11.2917 9.525 11.975C10.2083 12.6583 11.0333 13 12 13ZM5 19H19V17.85C18.1 16.9667 17.0542 16.2708 15.8625 15.7625C14.6708 15.2542 13.3833 15 12 15C10.6167 15 9.32917 15.2542 8.1375 15.7625C6.94583 16.2708 5.9 16.9667 5 17.85V19Z" fill="#CEA154"/>
+              </g>
+            </svg>
+          </div>
+          <h3 class="text-p-lg w-[100%]">Highly Trained Staff</h3>
+          <p class="text-p-md w-[90%]">Expert professionals delivering top-tier service with precision and care.         </p>
+        </div>
+        <div class="card1 w-full lg:w-1/2 h-fit flex flex-col gap-6 justify-start items-start py-12 px-8 bg-white rounded-2xl md:rounded-3xl  ">
+
+          <div class="w-[3.2rem] h-[3.2rem] bg-secondary10 rounded-full flex justify-center items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none">
+              <mask id="mask0_199_463" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+                <rect width="24" height="24" fill="#D9D9D9"/>
+              </mask>
+              <g mask="url(#mask0_199_463)">
+                <path d="M12 16C13.7 14.4667 14.7917 13.3875 15.275 12.7625C15.7583 12.1375 16 11.5167 16 10.9C16 10.3 15.7833 9.78333 15.35 9.35C14.9167 8.91667 14.4 8.7 13.8 8.7C13.45 8.7 13.1125 8.77083 12.7875 8.9125C12.4625 9.05417 12.2 9.25 12 9.5C11.8 9.25 11.5417 9.05417 11.225 8.9125C10.9083 8.77083 10.5667 8.7 10.2 8.7C9.6 8.7 9.08333 8.91667 8.65 9.35C8.21667 9.78333 8 10.3 8 10.9C8 11.2167 8.04167 11.5083 8.125 11.775C8.20833 12.0417 8.39167 12.3542 8.675 12.7125C8.95833 13.0708 9.3625 13.5083 9.8875 14.025C10.4125 14.5417 11.1167 15.2 12 16ZM12 22C9.68333 21.4167 7.77083 20.0875 6.2625 18.0125C4.75417 15.9375 4 13.6333 4 11.1V5L12 2L20 5V11.1C20 13.6333 19.2458 15.9375 17.7375 18.0125C16.2292 20.0875 14.3167 21.4167 12 22Z" fill="#CEA154"/>
+              </g>
+            </svg>
+          </div>
+          <h3 class="text-p-lg w-[100%]">Exceptional Care</h3>
+          <p class="text-p-md w-[90%]">Compassionate experts dedicated to providing exceptional care.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="right-second-section hidden lg:block bg-cover w-[40%] rounded-4xl bg-center h-[30rem]" style="background-image: url(/assets/asset\ 8.jpeg);">
+    </div>
+  </div>
+
+<!-- section 4 -->
+ <div data-aos="fade-up" class="section-4 flex flex-col lg:flex-row justify-between items-start px-6 py-8   gap-8 md:px-8 md:py-8 lg:px-16 lg:py-20 bg-white">
+
+  <div class="tablet-extra w-full hidden md:flex flex-row justify-between items-center lg:hidden">
+    <div class="left-side-feature w-[48%] h-[30rem] bg-grey20 relative overflow-hidden rounded-3xl ">
+      <div class="serving-and-logo w-full py-8 px-8 ">
+        <div class="flex flex-col justify-start items-start gap-4 ">
+          <img class="w-[50%]"  src="/assets/asset 0.png" alt="" > 
+          <h3 class="w-[100%] text-text text-p-lg">Excellence and comfort will be what you get from Haddon Home Care. </h3>
+        
+      </div>
+      <img class="  w-50 h-[350px] object-cover absolute -bottom-20 left-1 " src="/assets/asset 6.jpeg" alt="">
+      </div>
+        
+      
+    </div>
+    <div class=" w-[48%] h-[30rem] rounded-4xl bg-cover bg-center "style="background-image: url(/assets/asset\ 8.jpeg);">
+  
+    </div>
+  </div>
+  <div class="left-side-feature md:hidden h-[30rem] lg:h-[42.5rem] bg-grey20 relative overflow-hidden rounded-2xl md:rounded-3xl lg:rounded-4xl w-full lg:w-[35%] ">
+    <div class="serving-and-logo w-full py-8 px-8 ">
+      <div class="flex flex-col justify-start items-start gap-4 ">
+        <img class="w-[50%]"  src="/assets/asset 0.png" alt="" > 
+        <h3 class="w-[100%] text-text text-p-lg">Excellence and comfort will be what you get from Haddon Home Care. </h3>
+      
+    </div>
+    <img class=" md:w-20 w-50 h-[350px] object-cover absolute -bottom-24 -left-1 md:bottom-64 lg:left-1 lg:-bottom-1 " src="/assets/asset 6.jpeg" alt="">
+      </div>
+      
+    
+  </div>
+
+  <div class="right-feature-side w-[100%]  flex flex-col justify-between gap-6 h-auto ">
+
+  <div class=" w-[100%] top-image-stack flex flex-col md:flex-row justify-between items-start gap-6"> 
+    <div class=" w-full hidden md:block  md:w-[50%] h-[16rem]  md:h-[21rem] md:rounded-3xl lg;rounded-4xl bg-cover bg-center "style="background-image: url(/assets/asset\ 8.jpeg);">
+  
+    </div>
+
+    <div class=" w-full md:w-[50%] h-[16rem] md:h-[21rem] rounded-2xl md:rounded-3xl lg:rounded-4xl bg-cover bg-center "style="background-image: url(/assets/asset\ 3.jpeg); ">
+    </div>
+
+  </div>
+
+  <div class="bottom-image rounded-2xl md:rounded-3xl lg:rounded-4xl  px-4 py-12 md:px-8  w-[100%] h-[15rem] md:h-[20rem] lg:h-[25rem] bg-cover flex flex-col justify-center items-start gap-6" style="background-image: url(/assets/asset\ 35.jpeg);">
+
+    <p class="text-text text-p-lg">Contact us today</p>
+    <h2 class=" md:text-h3-default lg:text-h2-base  w-[50%]  ">Schedule a FREE in-home consultation</h2>
+    <button class="secbutton  text-white ">Book consultation now</button>
+
+  
+    </div>
+ </div>
+</div>
+
+
+<!-- Section 5 -->
+
+
+ <div data-aos="fade-up"  class="section-5 w-full flex flex-col justify-between items-center px-6 py-8  gap-8 md:px-8 md:py-8 lg:px-16 lg:py-20">
+
+  <div class="top-section-five w[100%] h-auto flex lg:flex-row  flex-col justify-between items-center gap-12">
+
+    <div class="left-section w-full lg:w-[40%] h-auto flex flex-col justify-start items-start md:items-center gap-8">
+      <h2 class="text-p-xl w-[80%] lg:text-h2-base md:w-[100%]">With assurance  of Compassionate Care Services</h2>
+      <p class=" text-p-md md:text-p-lg text-text w-[100%]">Our Home Care Aides will assist with all needs while providing a fun companion. Let the caregivers at Haddon Home Care help make life easier. We provide, but are not limited to, many of the same treatments as a live-in care facility. </p>
+  
+  
+  
+  
+  
+  
+    </div>
+  
+  <div class="list-of-services w-full   lg:w-[50%] h-auto flex md:flex-row flex-col justify-between items-start gap-8">
+    <div class="services w-[50%] h-auto justify-start items-start gap-6">
+      <ul class=" w-100% flex flex-col  gap-4" >
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Companionship</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Meal Preparation</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Transportation</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Light Housekeeping</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Errands & Shopping</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Medication Reminders</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Laundry & Linen Washing</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Personal Hygiene</p>
+        </li>
+    
+      </ul>
+  
+    </div>
+    <div class="list-of-services  w-full  lg:w-[50%] h-auto justify-start items-start gap-6">
+      <ul class=" w-100% flex flex-col  gap-4" >
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Senior Information Resources</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>MAlzheimer's / Dementia care</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Respite Care</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Active Range of Motion exercises</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Safety Supervision</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Toileting & Incontinence Care</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Recreational Activities</p>
+        </li>
+        <li class=" text-p-base flex flex-row justify-start items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_22_329" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_22_329)">
+              <path d="M10.5 17H13.5V14.5H16V11.5H13.5V9H10.5V11.5H8V14.5H10.5V17ZM4 21V9L12 3L20 9V21H4Z" fill="#5C8097"/>
+            </g>
+          </svg>
+          <p>Dressing Assistance</p>
+        </li>
+    
+      </ul>
+  
+    </div>
+  </div>
+  
+
+  </div>
+
+  <button class="secbutton  text-white ">For more info call us today (856) 866-6780</button>
+
+  
+ </div>
+
+
+ <!-- section 6 -->
+<div class="section-6 w-full h-auto py-20 bg-white flex flex-col justify-between items-center gap-16 overflow-hidden relative ">
+
+
+  <div class="review-card animate-scroll  hover:[animation-play-state:paused]  h-auto gap-8 flex flex-row justify-between items-center overflow-x-scroll px-6 scroll-smooth scrollbar-hide w-max"> 
+
+   <div class=" card w-[17rem] min-w-[17rem] h-auto flex flex-col justify-start items-start px-4 py-6 bg-grey20 rounded-3xl gap-6" >
+
+        <div class="main-reviews w-full h-auto">
+          <p class="text-p-md text-text w-[100%] "> <span class="text-h1-base">“</span>We are so thankful that we found Haddon Home Care at our time of need. They are dedicated to providing kind, compassionate, and caring support to both their client and… </p>
+        </div>
+
+      
+      <div class="rating w-fit h-auto flex flex-row justify-center items-center gap-2">
+        <div class="stars flex flex-row justify-start items-center gap-1">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          
+          
+        </div>
+        <img class="w-[18px]" src="/assets/asset 36.svg" alt="">
+        
+      </div>
+      
+      <div class="reviewer w-[100%] h-auto flex justify-start  items-center gap-2">
+      
+        <div class="logo">
+          <img src="/assets/asset 18.png" alt="">
+        </div>
+        <div class=" w-fit h-auto flex flex-col justify-start items-start gap-1 ">
+          <p class="text-p-lg">Jason Turner</p>
+          <p class="text-p-sm font-light text-text">2025-02-12</p>
+        </div>
+       
+      </div>
+    </div> 
+   <div class=" card w-[17rem] min-w-[17rem] h-auto flex flex-col justify-start items-start px-4 py-6 bg-grey20 rounded-3xl gap-6" >
+
+        <div class="main-reviews w-full h-auto">
+          <p class="text-p-md text-text w-[100%] "> <span class="text-h1-base">“</span>We are so thankful that we found Haddon Home Care at our time of need. They are dedicated to providing kind, compassionate, and caring support to both their client and… </p>
+        </div>
+
+      
+      <div class="rating w-fit h-auto flex flex-row justify-center items-center gap-2">
+        <div class="stars flex flex-row justify-start items-center gap-1">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          
+          
+        </div>
+        <img class="w-[18px]" src="/assets/asset 36.svg" alt="">
+        
+      </div>
+      
+      <div class="reviewer w-[100%] h-auto flex justify-start  items-center gap-2">
+      
+        <div class="logo">
+          <img src="/assets/asset 18.png" alt="">
+        </div>
+        <div class=" w-fit h-auto flex flex-col justify-start items-start gap-1 ">
+          <p class="text-p-lg">Jason Turner</p>
+          <p class="text-p-sm font-light text-text">2025-02-12</p>
+        </div>
+       
+      </div>
+    </div> 
+
+    <img src="/assets/asset 9.png" alt="">
+
+   <div class=" card w-[17rem] min-w-[17rem] h-auto flex flex-col justify-start items-start px-4 py-6 bg-grey20 rounded-3xl gap-6" >
+
+        <div class="main-reviews w-full h-auto">
+          <p class="text-p-md text-text w-[100%] "> <span class="text-h1-base">“</span>We are so thankful that we found Haddon Home Care at our time of need. They are dedicated to providing kind, compassionate, and caring support to both their client and… </p>
+        </div>
+
+      
+      <div class="rating w-fit h-auto flex flex-row justify-center items-center gap-2">
+        <div class="stars flex flex-row justify-start items-center gap-1">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          
+          
+        </div>
+        <img class="w-[18px]" src="/assets/asset 36.svg" alt="">
+        
+      </div>
+      
+      <div class="reviewer w-[100%] h-auto flex justify-start  items-center gap-2">
+      
+        <div class="logo">
+          <img src="/assets/asset 18.png" alt="">
+        </div>
+        <div class=" w-fit h-auto flex flex-col justify-start items-start gap-1 ">
+          <p class="text-p-lg">Jason Turner</p>
+          <p class="text-p-sm font-light text-text">2025-02-12</p>
+        </div>
+       
+      </div>
+    </div> 
+   <div class=" card w-[17rem] min-w-[17rem] h-auto flex flex-col justify-start items-start px-4 py-6 bg-grey20 rounded-3xl gap-6" >
+
+        <div class="main-reviews w-full h-auto">
+          <p class="text-p-md text-text w-[100%] "> <span class="text-h1-base">“</span>We are so thankful that we found Haddon Home Care at our time of need. They are dedicated to providing kind, compassionate, and caring support to both their client and… </p>
+        </div>
+
+      
+      <div class="rating w-fit h-auto flex flex-row justify-center items-center gap-2">
+        <div class="stars flex flex-row justify-start items-center gap-1">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          
+          
+        </div>
+        <img class="w-[18px]" src="/assets/asset 36.svg" alt="">
+        
+      </div>
+      
+      <div class="reviewer w-[100%] h-auto flex justify-start  items-center gap-2">
+      
+        <div class="logo">
+          <img src="/assets/asset 18.png" alt="">
+        </div>
+        <div class=" w-fit h-auto flex flex-col justify-start items-start gap-1 ">
+          <p class="text-p-lg">Jason Turner</p>
+          <p class="text-p-sm font-light text-text">2025-02-12</p>
+        </div>
+       
+      </div>
+    </div> 
+
+    <img src="/assets/asset 9.png" alt="">
+
+   <div class=" card w-[17rem] min-w-[17rem] h-auto flex flex-col justify-start items-start px-4 py-6 bg-grey20 rounded-3xl gap-6" >
+
+        <div class="main-reviews w-full h-auto">
+          <p class="text-p-md text-text w-[100%] "> <span class="text-h1-base">“</span>We are so thankful that we found Haddon Home Care at our time of need. They are dedicated to providing kind, compassionate, and caring support to both their client and… </p>
+        </div>
+
+      
+      <div class="rating w-fit h-auto flex flex-row justify-center items-center gap-2">
+        <div class="stars flex flex-row justify-start items-center gap-1">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          
+          
+        </div>
+        <img class="w-[18px]" src="/assets/asset 36.svg" alt="">
+        
+      </div>
+      
+      <div class="reviewer w-[100%] h-auto flex justify-start  items-center gap-2">
+      
+        <div class="logo">
+          <img src="/assets/asset 18.png" alt="">
+        </div>
+        <div class=" w-fit h-auto flex flex-col justify-start items-start gap-1 ">
+          <p class="text-p-lg">Jason Turner</p>
+          <p class="text-p-sm font-light text-text">2025-02-12</p>
+        </div>
+       
+      </div>
+    </div> 
+   <div class=" card w-[17rem] min-w-[17rem] h-auto flex flex-col justify-start items-start px-4 py-6 bg-grey20 rounded-3xl gap-6" >
+
+        <div class="main-reviews w-full h-auto">
+          <p class="text-p-md text-text w-[100%] "> <span class="text-h1-base">“</span>We are so thankful that we found Haddon Home Care at our time of need. They are dedicated to providing kind, compassionate, and caring support to both their client and… </p>
+        </div>
+
+      
+      <div class="rating w-fit h-auto flex flex-row justify-center items-center gap-2">
+        <div class="stars flex flex-row justify-start items-center gap-1">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          
+          
+        </div>
+        <img class="w-[18px]" src="/assets/asset 36.svg" alt="">
+        
+      </div>
+      
+      <div class="reviewer w-[100%] h-auto flex justify-start  items-center gap-2">
+      
+        <div class="logo">
+          <img src="/assets/asset 18.png" alt="">
+        </div>
+        <div class=" w-fit h-auto flex flex-col justify-start items-start gap-1 ">
+          <p class="text-p-lg">Jason Turner</p>
+          <p class="text-p-sm font-light text-text">2025-02-12</p>
+        </div>
+       
+      </div>
+    </div> 
+    <img src="/assets/asset 9.png" alt="">
+   <div class=" card w-[17rem] min-w-[17rem] h-auto flex flex-col justify-start items-start px-4 py-6 bg-grey20 rounded-3xl gap-6" >
+
+        <div class="main-reviews w-full h-auto">
+          <p class="text-p-md text-text w-[100%] "> <span class="text-h1-base">“</span>We are so thankful that we found Haddon Home Care at our time of need. They are dedicated to providing kind, compassionate, and caring support to both their client and… </p>
+        </div>
+
+      
+      <div class="rating w-fit h-auto flex flex-row justify-center items-center gap-2">
+        <div class="stars flex flex-row justify-start items-center gap-1">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          
+          
+        </div>
+        <img class="w-[18px]" src="/assets/asset 36.svg" alt="">
+        
+      </div>
+      
+      <div class="reviewer w-[100%] h-auto flex justify-start  items-center gap-2">
+      
+        <div class="logo">
+          <img src="/assets/asset 18.png" alt="">
+        </div>
+        <div class=" w-fit h-auto flex flex-col justify-start items-start gap-1 ">
+          <p class="text-p-lg">Jason Turner</p>
+          <p class="text-p-sm font-light text-text">2025-02-12</p>
+        </div>
+       
+      </div>
+    </div> 
+   <div class=" card w-[17rem] min-w-[17rem] min-w h-auto flex flex-col justify-start items-start px-4 py-6 bg-grey20 rounded-3xl gap-6" >
+
+        <div class="main-reviews w-full h-auto">
+          <p class="text-p-md text-text w-[100%] "> <span class="text-h1-base">“</span>We are so thankful that we found Haddon Home Care at our time of need. They are dedicated to providing kind, compassionate, and caring support to both their client and… </p>
+        </div>
+
+      
+      <div class="rating w-fit h-auto flex flex-row justify-center items-center gap-2">
+        <div class="stars flex flex-row justify-start items-center gap-1">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          <img class="w-[20px]" src="/assets/asset 12.svg" alt="">
+          
+          
+        </div>
+        <img class="w-[18px]" src="/assets/asset 36.svg" alt="">
+        
+      </div>
+      
+      <div class="reviewer w-[100%] h-auto flex justify-start  items-center gap-2">
+      
+        <div class="logo">
+          <img src="/assets/asset 18.png" alt="">
+        </div>
+        <div class=" w-fit h-auto flex flex-col justify-start items-start gap-1 ">
+          <p class="text-p-lg">Jason Turner</p>
+          <p class="text-p-sm font-light text-text">2025-02-12</p>
+        </div>
+       
+      </div>
+    </div> 
+  
+  </div>
+
+
+
+
+</div>
+
+
+<!-- Section 7 md -->
+
+
+<div class="md:hidden   w-full flex flex-col justify-start items-start" >
+
+  <div class="content w-full  bg-primary100  py-12 px-6 lg:w-[40%] md:w-[70%] flex flex-col justify-start items-start gap-8 md:gap-16">
+    <div class="section-7-text w-fit h-auto flex flex-col justify-start items-start gap-8">
+      <h2 class=" text-white text-p-xl w-[80%]  ">Our Focus Is Helping Seniors Live Well At Home</h2>
+      <p class="text-white text-p-md">Our staff takes the time to make sure that all of your specific needs are well taken care of.</p>
+    </div>
+  
+    <button class=" secbutton md:prybutton  text-white ">Book consultation now</button>
+  </div>
+
+  <div class="bg-image  w-full h-[21rem] bg-cover bg-no-repeat  bg-[70%_30%]" style="background-image: url(/assets/asset\ 34.jpeg);">
+  </div>
+</div>
+
+
+<div class="bottom-image  hidden md:flex  px-6 py-0  gap-8 md:px-8 md:py-8 lg:px-16 lg:py-20 relative md:w-[100%]  md:h-[34rem] bg-cover bg-[60%] flex-col justify-center overflow-hidden items-start" style="background-image: url(/assets/asset\ 34.jpeg);">
+
+
+  <div class="content w-[90%]  lg:w-[40%] md:w-[70%] flex flex-col justify-start items-start gap-8 md:gap-16 z-10">
+    <div class="section-7-text lg:w-fit md:w-[70%] h-auto flex flex-col justify-start items-start gap-6">
+      <h2 class="text-h3-regular md:text-h2-base w-[100%]  ">Our Focus Is Helping Seniors Live Well At Home</h2>
+      <p class="text-text text-p-lg">Our staff takes the time to make sure that all of your specific needs are well taken care of.</p>
+    </div>
+  
+    <button class=" secbutton md:prybutton  text-white ">Book consultation now</button>
+  </div>
+
+  <div class="bg-image md:hidden w-full h-[21rem] bg-cover bg-no-repeat bg-center" style="background-image: url(/assets/asset\ 34.jpeg);">
+  </div>
+
+<div class= " hidden md:flex lg:w-fit md:w-[70%] md:px-8  bg-[linear-gradient(-90deg,_rgba(255,255,255,0.00)_20%,_white_60%)] w-[70rem] h-[38rem] absolute  -left-4 -bottom-2 z-0 ">
+</div>
+
+
+
+
+
+
+  </div>
+
+<!-- section 7 mobile -->
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+   <!-- footer -->
+
+   <div class="footer w-full h-auto bg-primary10 flex flex-col justify-between items-start gap-12 px-5 md:px-8 py-12 pb-12 lg:px-16 lg:py-24">
+
+    <div class="top-footer w-full h-auto flex flex-col lg:flex-row gap-12 lg:gap-8  justify-between items-start">
+      <div class="logo  w-60 ">
+        <img class="w-100" src="/assets/asset 0.png" alt="">
+      </div>
+
+      <div class="contact w-full  lg:w-[25%] flex flex-col justify-start items-start gap-6">
+        <div class="address w-fit  h-auto  flex flex-row justify-start items-center gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_18_1401" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_18_1401)">
+              <path d="M12 12C12.55 12 13.0208 11.8042 13.4125 11.4125C13.8042 11.0208 14 10.55 14 10C14 9.45 13.8042 8.97917 13.4125 8.5875C13.0208 8.19583 12.55 8 12 8C11.45 8 10.9792 8.19583 10.5875 8.5875C10.1958 8.97917 10 9.45 10 10C10 10.55 10.1958 11.0208 10.5875 11.4125C10.9792 11.8042 11.45 12 12 12ZM12 22C9.31667 19.7167 7.3125 17.5958 5.9875 15.6375C4.6625 13.6792 4 11.8667 4 10.2C4 7.7 4.80417 5.70833 6.4125 4.225C8.02083 2.74167 9.88333 2 12 2C14.1167 2 15.9792 2.74167 17.5875 4.225C19.1958 5.70833 20 7.7 20 10.2C20 11.8667 19.3375 13.6792 18.0125 15.6375C16.6875 17.5958 14.6833 19.7167 12 22Z" fill="#CEA154"/>
+            </g>
+          </svg>
+          <p class=" lg:text-p-md text-p-base text-text">320 Haddon Ave
+            Haddon Township, NJ 08108</p>
+        </div>
+        <div class="telephone w-fit  h-auto  flex flex-row justify-start items-center gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_18_1387" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+              <rect width="24" height="24" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_18_1387)">
+              <path d="M19.95 21C17.8667 21 15.8083 20.5458 13.775 19.6375C11.7417 18.7292 9.89167 17.4417 8.225 15.775C6.55833 14.1083 5.27083 12.2583 4.3625 10.225C3.45417 8.19167 3 6.13333 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07917 8.725 3.2375C8.90833 3.39583 9.01667 3.58333 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.70417 12.1125 8.1625 12.6875C8.62083 13.2625 9.125 13.8167 9.675 14.35C10.1917 14.8667 10.7333 15.3458 11.3 15.7875C11.8667 16.2292 12.4667 16.6333 13.1 17L15.45 14.65C15.6 14.5 15.7958 14.3875 16.0375 14.3125C16.2792 14.2375 16.5167 14.2167 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1375 20.775 15.3125C20.925 15.4875 21 15.6833 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21Z" fill="#CEA154"/>
+            </g>
+          </svg>
+          <div class="phones flex flex-col justify-start items-start gap-2"> 
+            <p class=" lg:text-p-md text-p-base text-text">Phone: (856) 866-6780 </p>
+            <p class=" lg:text-p-md text-p-base text-text">Fax: (888) 866-9775</p>
+          </div>
+          
+        </div>
+        <div class="email w-fit  h-auto  flex flex-row justify-start items-center gap-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <mask id="mask0_18_1420" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+              <rect width="32" height="32" fill="#D9D9D9"/>
+            </mask>
+            <g mask="url(#mask0_18_1420)">
+              <path d="M4 20C3.45 20 2.97917 19.8042 2.5875 19.4125C2.19583 19.0208 2 18.55 2 18V6C2 5.45 2.19583 4.97917 2.5875 4.5875C2.97917 4.19583 3.45 4 4 4H20C20.55 4 21.0208 4.19583 21.4125 4.5875C21.8042 4.97917 22 5.45 22 6V18C22 18.55 21.8042 19.0208 21.4125 19.4125C21.0208 19.8042 20.55 20 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z" fill="#CEA154"/>
+            </g>
+          </svg>
+          <p class=" lg:text-p-md text-p-base text-text">info@haddonhomecare.com</p>
+        </div>
+        
+      </div>
+      <div class="footer-nav-bar hidden md:flex flex-col justify-between gap-4 md:gap-8 ">
+        <a  class=" cursor-pointer text-p-md" href="">About us</a>
+        <a  class=" cursor-pointer text-p-md" href="">Services</a>
+        <a  class=" cursor-pointer text-p-md" href="">Contact us</a>
+        <a  class=" cursor-pointer text-p-md" href="">Resources</a>
+      </div>
+
+      <div class="call-to-actions hidden   w-fit  lg:flex gap-8 justify-between items-center">
+        
+        <button class="secbutton  text-white"> call us today (856) 866-6780</button>
+      </div>
+
+      <div class="footer-nav-bar  flex md:hidden flex-row justify-between gap-4 md:gap-8 ">
+        <a  class=" cursor-pointer text-p-base" href="">About us</a>
+        <a  class=" cursor-pointer text-p-base" href="">Services</a>
+        <a  class=" cursor-pointer text-p-base" href="">Contact us</a>
+        <a  class=" cursor-pointer text-p-base" href="">Resources</a>
+      </div>
+    </div>
+
+    <div class="bottom-footer w-full h-auto flex flex-col md:flex-row lg:justify-between items-start justify-start gap-4  lg:items-center ">
+      <div class="copyright w-fit h-auto flex flex-row justify-start items-center gap-4">
+        <p class=" lg:text-p-md text-p-base text-primary100"> Copyright © 2025 Haddon Home Care.</p>
+      </div>
+
+      <p class="lg:text-p-md text-p-base">NJ License #: HP0331000</p>
+      <div class="socials w-fit h-auto flex flex-row justify-start items-center gap-4 lg:gap-8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 25" fill="none">
+          <path d="M0 12.375C0 19.0024 5.37258 24.375 12 24.375C18.6274 24.375 24 19.0024 24 12.375C24 5.74758 18.6274 0.375 12 0.375C5.37258 0.375 0 5.74758 0 12.375Z" fill="#CEA154"/>
+          <path d="M18 12.375C18 9.075 15.3 6.375 12 6.375C8.7 6.375 6 9.075 6 12.375C6 15.375 8.175 17.85 11.025 18.3V14.1H9.525V12.375H11.025V11.025C11.025 9.525 11.925 8.7 13.275 8.7C13.95 8.7 14.625 8.85 14.625 8.85V10.35H13.875C13.125 10.35 12.9 10.8 12.9 11.25V12.375H14.55L14.25 14.1H12.825V18.375C15.825 17.925 18 15.375 18 12.375Z" fill="white"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 25" fill="none">
+          <path d="M0 12.375C0 19.0024 5.37258 24.375 12 24.375C18.6274 24.375 24 19.0024 24 12.375C24 5.74758 18.6274 0.375 12 0.375C5.37258 0.375 0 5.74758 0 12.375Z" fill="#CEA154"/>
+          <path d="M18 8.625C17.55 8.85 17.1 8.925 16.575 9C17.1 8.7 17.475 8.25 17.625 7.65C17.175 7.95 16.65 8.1 16.05 8.25C15.6 7.8 14.925 7.5 14.25 7.5C12.675 7.5 11.475 9 11.85 10.5C9.825 10.425 8.025 9.45 6.75 7.95C6.075 9.075 6.45 10.5 7.5 11.25C7.125 11.25 6.75 11.1 6.375 10.95C6.375 12.075 7.2 13.125 8.325 13.425C7.95 13.5 7.575 13.575 7.2 13.5C7.5 14.475 8.4 15.225 9.525 15.225C8.625 15.9 7.275 16.275 6 16.125C7.125 16.8 8.4 17.25 9.75 17.25C14.325 17.25 16.875 13.425 16.725 9.9C17.25 9.6 17.7 9.15 18 8.625Z" fill="white"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 25" fill="none">
+          <path d="M0 12.375C0 19.0024 5.37258 24.375 12 24.375C18.6274 24.375 24 19.0024 24 12.375C24 5.74758 18.6274 0.375 12 0.375C5.37258 0.375 0 5.74758 0 12.375Z" fill="#CEA154"/>
+          <path d="M11.9999 7.27502C13.6499 7.27502 13.8749 7.27502 14.5499 7.27502C15.1499 7.27502 15.4499 7.42502 15.6749 7.50002C15.9749 7.65002 16.1999 7.72502 16.4249 7.95002C16.6499 8.17502 16.7999 8.40002 16.8749 8.70002C16.9499 8.92502 17.0249 9.22502 17.0999 9.82502C17.0999 10.5 17.0999 10.65 17.0999 12.375C17.0999 14.1 17.0999 14.25 17.0999 14.925C17.0999 15.525 16.9499 15.825 16.8749 16.05C16.7249 16.35 16.6499 16.575 16.4249 16.8C16.1999 17.025 15.9749 17.175 15.6749 17.25C15.4499 17.325 15.1499 17.4 14.5499 17.475C13.8749 17.475 13.7249 17.475 11.9999 17.475C10.2749 17.475 10.1249 17.475 9.4499 17.475C8.8499 17.475 8.5499 17.325 8.3249 17.25C8.0249 17.1 7.7999 17.025 7.5749 16.8C7.3499 16.575 7.1999 16.35 7.1249 16.05C7.0499 15.825 6.9749 15.525 6.8999 14.925C6.8999 14.25 6.8999 14.1 6.8999 12.375C6.8999 10.65 6.8999 10.5 6.8999 9.82502C6.8999 9.22502 7.0499 8.92502 7.1249 8.70002C7.2749 8.40002 7.3499 8.17502 7.5749 7.95002C7.7999 7.72502 8.0249 7.57502 8.3249 7.50002C8.5499 7.42502 8.8499 7.35002 9.4499 7.27502C10.1249 7.27502 10.3499 7.27502 11.9999 7.27502ZM11.9999 6.15002C10.2749 6.15002 10.1249 6.15002 9.4499 6.15002C8.7749 6.15002 8.3249 6.30002 7.9499 6.45002C7.5749 6.60002 7.1999 6.82502 6.8249 7.20002C6.4499 7.57502 6.2999 7.87502 6.0749 8.32502C5.9249 8.70002 5.8499 9.15002 5.7749 9.82502C5.7749 10.5 5.7749 10.725 5.7749 12.375C5.7749 14.1 5.7749 14.25 5.7749 14.925C5.7749 15.6 5.9249 16.05 6.0749 16.425C6.2249 16.8 6.4499 17.175 6.8249 17.55C7.1999 17.925 7.4999 18.075 7.9499 18.3C8.3249 18.45 8.7749 18.525 9.4499 18.6C10.1249 18.6 10.3499 18.6 11.9999 18.6C13.6499 18.6 13.8749 18.6 14.5499 18.6C15.2249 18.6 15.6749 18.45 16.0499 18.3C16.4249 18.15 16.7999 17.925 17.1749 17.55C17.5499 17.175 17.6999 16.875 17.9249 16.425C18.0749 16.05 18.1499 15.6 18.2249 14.925C18.2249 14.25 18.2249 14.025 18.2249 12.375C18.2249 10.725 18.2249 10.5 18.2249 9.82502C18.2249 9.15002 18.0749 8.70002 17.9249 8.32502C17.7749 7.95002 17.5499 7.57502 17.1749 7.20002C16.7999 6.82502 16.4999 6.67502 16.0499 6.45002C15.6749 6.30002 15.2249 6.22502 14.5499 6.15002C13.8749 6.15002 13.7249 6.15002 11.9999 6.15002Z" fill="white"/>
+          <path d="M11.9999 9.15002C10.1999 9.15002 8.7749 10.575 8.7749 12.375C8.7749 14.175 10.1999 15.6 11.9999 15.6C13.7999 15.6 15.2249 14.175 15.2249 12.375C15.2249 10.575 13.7999 9.15002 11.9999 9.15002ZM11.9999 14.475C10.8749 14.475 9.8999 13.575 9.8999 12.375C9.8999 11.25 10.7999 10.275 11.9999 10.275C13.1249 10.275 14.0999 11.175 14.0999 12.375C14.0999 13.5 13.1249 14.475 11.9999 14.475Z" fill="white"/>
+          <path d="M15.2999 9.82502C15.7141 9.82502 16.0499 9.48924 16.0499 9.07502C16.0499 8.66081 15.7141 8.32502 15.2999 8.32502C14.8857 8.32502 14.5499 8.66081 14.5499 9.07502C14.5499 9.48924 14.8857 9.82502 15.2999 9.82502Z" fill="white"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 25" fill="none">
+          <path d="M0 12.375C0 19.0024 5.37258 24.375 12 24.375C18.6274 24.375 24 19.0024 24 12.375C24 5.74758 18.6274 0.375 12 0.375C5.37258 0.375 0 5.74758 0 12.375Z" fill="#CEA154"/>
+          <path d="M8.7 18.375H6.15V10.35H8.7V18.375ZM7.425 9.225C6.6 9.225 6 8.625 6 7.8C6 6.975 6.675 6.375 7.425 6.375C8.25 6.375 8.85 6.975 8.85 7.8C8.85 8.625 8.25 9.225 7.425 9.225ZM18 18.375H15.45V14.025C15.45 12.75 14.925 12.375 14.175 12.375C13.425 12.375 12.675 12.975 12.675 14.1V18.375H10.125V10.35H12.525V11.475C12.75 10.95 13.65 10.125 14.925 10.125C16.35 10.125 17.85 10.95 17.85 13.425V18.375H18Z" fill="white"/>
+        </svg>
+      </div>
+
+    </div>
+   </div>
+
+   <!-- last cta -->
+
+   <div class="last-cta sticky  bottom-0 w-full py-4 px-8 justify-center items-center bg-green-500 gap-6 flex md:hidden ">
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <mask id="mask0_5_1652" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+        <rect width="24" height="48" fill="#D9D9D9"/>
+      </mask>
+      <g mask="url(#mask0_5_1652)">
+        <path d="M19.95 21C17.8667 21 15.8083 20.5458 13.775 19.6375C11.7417 18.7292 9.89167 17.4417 8.225 15.775C6.55833 14.1083 5.27083 12.2583 4.3625 10.225C3.45417 8.19167 3 6.13333 3 4.05C3 3.75 3.1 3.5 3.3 3.3C3.5 3.1 3.75 3 4.05 3H8.1C8.33333 3 8.54167 3.07917 8.725 3.2375C8.90833 3.39583 9.01667 3.58333 9.05 3.8L9.7 7.3C9.73333 7.56667 9.725 7.79167 9.675 7.975C9.625 8.15833 9.53333 8.31667 9.4 8.45L6.975 10.9C7.30833 11.5167 7.70417 12.1125 8.1625 12.6875C8.62083 13.2625 9.125 13.8167 9.675 14.35C10.1917 14.8667 10.7333 15.3458 11.3 15.7875C11.8667 16.2292 12.4667 16.6333 13.1 17L15.45 14.65C15.6 14.5 15.7958 14.3875 16.0375 14.3125C16.2792 14.2375 16.5167 14.2167 16.75 14.25L20.2 14.95C20.4333 15.0167 20.625 15.1375 20.775 15.3125C20.925 15.4875 21 15.6833 21 15.9V19.95C21 20.25 20.9 20.5 20.7 20.7C20.5 20.9 20.25 21 19.95 21Z" fill="#ffffff"/>
+      </g>
+    </svg>
+    <p class=" text-xl text-white">Click here to call us today!</p>
+
+   </div>
+
+
+   <script>
+    const bg1 = document.querySelector('.bgimage1');
+    const bg2 = document.querySelector('.bgimage2');
+    const bg3 = document.querySelector('.bgimage3');
+  
+    const images1 = [
+      "url('/assets/hero/hero2.jpeg')",
+      "url('/assets/hero/hero6.jpeg')",
+      "url('/assets/hero/hero1.jpeg')"
+    ];
+  
+    const images2 = [
+      "url('assets/hero/hero1.jpeg')",
+      "url('assets/hero/hero2.jpeg')",
+      "url('/assets/hero/hero6.jpeg')"
+    ];
+  
+    const images3 = [
+      "url('assets/hero/hero6.jpeg')",
+      "url('assets/hero/hero1.jpeg')",
+      "url('assets/hero/hero2.jpeg')"
+    ];
+  
+    let index = 0;
+  
+    setInterval(() => {
+      bg1.style.backgroundImage = images1[index];
+      bg2.style.backgroundImage = images2[index];
+      bg3.style.backgroundImage = images3[index];
+  
+      index = (index + 1) % images1.length;
+    }, 4000);
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    AOS.init({
+      duration: 800, // Animation duration (ms)
+      once: false,     // Only animate once when scrolled into view
+      offset: 120,     // Offset (px) from the original trigger point
+      easing: 'ease-in-out',
+    });
+  });
+</script>
+
+<script>
+  // JavaScript to handle the menu button click
+  // This code will toggle the visibility of the menu when the button is clicked
+
+
+  
+document.addEventListener('DOMContentLoaded', function() {
+  const menuButton = document.getElementById('menu-button');
+  const menu = document.getElementById('menu');
+
+  menuButton.addEventListener('click', function() {
+    menu.classList.toggle('hidden');
+  });
+});
+
+</script>
+
+ 
+</body>
+</html>

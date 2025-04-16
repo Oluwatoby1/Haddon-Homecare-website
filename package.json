@@ -1,0 +1,19 @@
+{
+  "name": "homecare",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify --watch",
+    "dev": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify --watch",
+    "start": "live-server --port=3000 --no-browser --watch=./dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}
