@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @font-face {
   font-family: 'Product Sans';
@@ -89,6 +91,3 @@
     height: 30rem;
   } */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
